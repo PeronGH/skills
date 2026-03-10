@@ -13,9 +13,12 @@ Keep public APIs minimal. Structure code around durable boundaries, not short-te
 
 Prefer mature dependencies over bespoke code when they simplify the design. Remove dependencies that constrain the design.
 
-## Correctness
+## Refactoring
 
-If an abstraction is wrong, refactor or rewrite it instead of layering fixes on top. Do not introduce hacky workarounds without user approval.
+If an abstraction is wrong, refactor or rewrite it instead of layering fixes on top. Large-scale rewrites and breaking changes are encouraged when they are the right fix. Do not introduce hacky workarounds without user approval.
+
+## Idioms
+
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 
 ## Testing
