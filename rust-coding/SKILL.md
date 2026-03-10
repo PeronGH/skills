@@ -25,6 +25,10 @@ Doc comments on every public item. `cargo doc` should produce useful, navigable 
 
 Every `#[test]` function for integration tests must have a doc comment explaining what it covers and why it exists (`Origin:` line if harvested from other projects, `Spec:` line if validated against a specification).
 
+## Before Commit
+
+Before committing, `cargo fmt --check`, `cargo clippy`, and `cargo test` must pass.
+
 ## Lint Suppressions
 
 Follow the lint policy. Any non-test lint suppression must use the narrowest scope possible and include an explicit `reason = "..."`.
