@@ -39,7 +39,7 @@ The model has senior-level knowledge but junior-level defaults. Every line in a 
 
 ### Size
 
-Ideal skill is under 50 lines. Limit is 200 lines. If you're past 100, you're probably teaching instead of configuring.
+Ideal skill is under 100 lines. Hard limit is 200 lines.
 
 ### Bundled Resources
 
@@ -54,18 +54,3 @@ skill-name/
 ```
 
 SKILL.md stays short. Reference files carry the bulk when needed.
-
-## Process
-
-1. Ask what defaults the user wants to override.
-2. Draft. Keep it tight.
-3. Show the user. Expect them to cut more than you add.
-4. Package when they're satisfied.
-
-## Packaging
-
-```bash
-cd /home/claude && python -m scripts.package_skill /path/to/skill-folder
-```
-
-Copy the `.skill` file to `/mnt/user-data/outputs/` and present it.
