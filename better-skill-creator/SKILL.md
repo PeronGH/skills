@@ -26,7 +26,10 @@ description: "When to trigger. Keep it broad — one sentence."
 ---
 ```
 
-The description is the only trigger mechanism. Make it broad enough that it fires whenever relevant. The model tends to undertrigger — err on the side of pushy.
+- `description` is the trigger. Put all "when to use" information there, not in the body.
+- Include both what the skill does and the situations that should trigger it.
+- Make it broad enough that it fires whenever relevant. The model undertriggers — err on the side of pushy.
+- Use lowercase letters, digits, and hyphens for `name`. Keep it short. Name the folder exactly after the skill name.
 
 ### Body
 
@@ -36,6 +39,7 @@ The model has senior-level knowledge but junior-level defaults. Every line in a 
 - Prefer imperative sentences. "Use X" not "You should consider using X".
 - If a section has one sentence, it doesn't need a heading — fold it into a neighbor.
 - One example is worth including only if the convention is ambiguous without it. Zero is usually fine.
+- Keep trigger guidance out of the body. The body is read only after the skill fires.
 
 ### Size
 
@@ -54,3 +58,9 @@ skill-name/
 ```
 
 SKILL.md stays short. Reference files carry the bulk when needed.
+- Link reference files directly from SKILL.md. Avoid deep chains.
+
+### Exclusions
+
+- Do not add auxiliary docs like `README.md`, `CHANGELOG.md`, or installation notes.
+- Do not duplicate the same information in both SKILL.md and `references/`.
