@@ -5,7 +5,7 @@ description: "Use this skill for anything Rust-related. Always consult it before
 
 # Rust Coding
 
-## Structure
+## File Size
 
 Recommended file size is under 500 lines. Hard limit is 1000 lines; if reached, break the file down.
 
@@ -21,10 +21,6 @@ Use `thiserror` for library errors, `anyhow` in binary/CLI layers.
 
 Doc comments on every public item. `cargo doc` should produce useful, navigable documentation.
 
-## Testing
-
-Every `#[test]` function for integration tests must have a doc comment explaining what it covers and why it exists (`Origin:` line if harvested from other projects, `Spec:` line if validated against a specification).
-
 ## Before Commit
 
 Before committing, `cargo fmt --check`, `cargo clippy`, and `cargo test` must pass.
@@ -35,7 +31,7 @@ Follow the lint policy. Any non-test lint suppression must use the narrowest sco
 
 ## Panic Policy
 
-In non-test code, do not use constructs that can panic at runtime. When an invariant guarantees safety, make it explicit in the code.
+Do not use panic-prone code casually in non-test code. `unwrap`, `expect`, and similar operations are acceptable when a local invariant guarantees the value and making it fallible would only force fallibility onto callers up the call chain; make that invariant explicit in the code or comments.
 
 ## Unsafe Policy
 

@@ -23,7 +23,7 @@ If translating an idea from another language, rewrite it in the idioms of the ta
 
 ## Testing
 
-Add tests for new behavior and regressions. Every integration test must have a comment explaining what it covers and why it exists; add `Origin:` or `Spec:` when applicable.
+Add tests for new behavior and regressions. Every integration test must have a comment explaining what it covers and why it exists.
 
 ## Documentation
 
