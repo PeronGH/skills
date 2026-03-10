@@ -7,11 +7,11 @@ description: "Use this skill for anything Rust-related. Always consult it before
 
 ## Structure
 
-Keep code modular and DRY. Recommended file size is under 500 lines. Hard limit is 1000 lines; if reached, break the file down.
+Recommended file size is under 500 lines. Hard limit is 1000 lines; if reached, break the file down.
 
 ## Dependencies
 
-Never hand-edit `Cargo.toml`. Use `cargo` for all dependency changes. Prefer well-maintained crates over hand-rolling equivalent logic. Remove dependencies that constrain the design.
+Never hand-edit `Cargo.toml`. Use `cargo` for all dependency changes.
 
 ## Error Handling
 
@@ -19,7 +19,7 @@ Use `thiserror` for library errors, `anyhow` in binary/CLI layers.
 
 ## Documentation
 
-Doc comments on every public item. `cargo doc` should produce useful, navigable documentation. When behavior or a public API changes, update the doc comments in the same commit.
+Doc comments on every public item. `cargo doc` should produce useful, navigable documentation.
 
 ## Testing
 
@@ -43,8 +43,8 @@ Each unsafe block must contain a single operation with a `SAFETY` comment explai
 
 ## Performance
 
-Performance is a priority. Use crates that provide high-performance data structures or algorithms rather than hand-rolling. Hot paths must have benchmarks. Any performance regression must be explained to the human before committing.
+Hot paths must have benchmarks. Any performance regression must be explained to the human before committing.
 
 ## Hygiene
 
-Keep visibility as tight as possible. Handle every `Result` — never silently discard. Do not hold locks or `RefCell` borrows across await points. Do not mark functions async unless they await.
+Handle every `Result` — never silently discard. Do not hold locks or `RefCell` borrows across await points. Do not mark functions async unless they await.
