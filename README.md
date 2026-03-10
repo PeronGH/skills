@@ -12,5 +12,5 @@ ln -s "$PWD" ~/.claude/skills
 ## Available Skills
 
 - [better-skill-creator](better-skill-creator/SKILL.md): write better skills than the default
-- [git-workflow](git-workflow/SKILL.md): use conventional branch names and commit messages
+- [git-workflow](git-workflow/SKILL.md): use conventional branch names, frequent commits, and conventional commit messages
 - [rust-coding](rust-coding/SKILL.md): write high-quality Rust code
