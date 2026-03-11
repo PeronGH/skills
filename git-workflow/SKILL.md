@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: "Use this skill as long as you are working in a git repo."
+description: "Use this skill as long as you are working in a git repo. It encodes specific conventions that must be followed."
 ---
 
 # Git Workflow
