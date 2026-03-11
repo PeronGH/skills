@@ -30,6 +30,12 @@ Add tests for new behavior and regressions. Only test code that has meaningful l
 
 When behavior or a public API changes, update related comments and docs in the same change. Keep the README to purpose, usage, and a minimal example.
 
+## Git
+
+Create a branch (`<type>/<description>`) for substantial or risky changes. Direct commits to `main`/`master` are acceptable for low-risk work or early-stage projects.
+Commit frequently and autonomously instead of batching large changes.
+Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
+
 ## Tooling
 
 Every project must have a formatter and linter configured. Set them up before writing any code if they are missing.
