@@ -1,6 +1,6 @@
 ---
 name: coding-quality
-description: "Use this skill for all types of coding tasks. Always load it when you are coding."
+description: "Use this skill for all types of coding tasks. Always load it when you are coding, alongside any language-specific skills."
 ---
 
 # Coding Quality
