@@ -12,6 +12,7 @@ Keep public APIs minimal. Structure code around durable boundaries, not short-te
 ## Dependencies
 
 Prefer mature dependencies over bespoke code when they simplify the design. Remove dependencies that constrain the design.
+Use the package manager for dependency changes so package names and versions come from current registry data, not memory. Hand-edit manifests only for details the package manager cannot express.
 
 ## Refactoring
 

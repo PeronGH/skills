@@ -9,10 +9,6 @@ description: "Use this skill for anything Rust-related. It encodes specific conv
 
 Recommended file size is under 500 lines. Hard limit is 1000 lines; if reached, break the file down.
 
-## Dependencies
-
-Never hand-edit `Cargo.toml`. Use `cargo` for all dependency changes.
-
 ## Error Handling
 
 Use `thiserror` for library errors, `anyhow` in binary/CLI layers.
