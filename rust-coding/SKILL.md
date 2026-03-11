@@ -1,6 +1,6 @@
 ---
 name: rust-coding
-description: "Use this skill for anything Rust-related. Always consult it before writing or modifying Rust code."
+description: "Use this skill for anything Rust-related. Always consult it before reading or writing Rust code."
 ---
 
 # Rust Coding

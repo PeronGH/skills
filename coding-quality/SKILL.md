@@ -1,6 +1,6 @@
 ---
 name: coding-quality
-description: "Use this skill for coding tasks as a base layer of cross-cutting code-quality rules. It complements more specific language or framework skills rather than replacing them."
+description: "Use this skill for all types of coding tasks. Always load it when you are coding."
 ---
 
 # Coding Quality

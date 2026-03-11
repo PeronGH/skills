@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: "Use as long as you are working in a git repo. Branch when appropriate, commit frequently, and use conventional commit messages: `<type>(<scope>): <description>`."
+description: "Use this skill as long as you are working in a git repo."
 ---
 
 # Git Workflow

@@ -1,6 +1,6 @@
 ---
 name: waku-idiomatic
-description: "Use when writing, reviewing, or scaffolding a Waku project. Trigger on any mention of Waku, waku.gg, or React Server Components in a Waku context. Also trigger when creating new pages, layouts, API routes, or server actions in a project that uses Waku."
+description: "Use whenever a Waku project is involved. Trigger on any mention of Waku, waku.gg, or React Server Components in a Waku context."
 ---
 
 # Idiomatic Waku
