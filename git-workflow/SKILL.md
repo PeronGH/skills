@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: "TL;DR: Branch when appropriate, commit frequently, and use conventional commit messages: `<type>(<scope>): <description>`."
+description: "Use as long as you are working in a git repo. Branch when appropriate, commit frequently, and use conventional commit messages: `<type>(<scope>): <description>`."
 ---
 
 # Git Workflow
