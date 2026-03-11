@@ -29,6 +29,12 @@ Add tests for new behavior and regressions. Only test code that has meaningful l
 
 When behavior or a public API changes, update related comments and docs in the same change. Keep the README to purpose, usage, and a minimal example.
 
+## Tooling
+
+Every project must have a formatter and linter configured. Set them up before writing any code if they are missing.
+
+Any lint or type-check suppression must include a justification — use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`), otherwise a code comment.
+
 ## Before Commit
 
 Before committing, formatter, linter, and tests must pass.
