@@ -1,8 +1,7 @@
----
-name: coding-quality
-description: "Use this skill for all types of coding tasks. It encodes specific conventions that must be followed. Always load it before reading code or coding, alongside any language-specific skills."
----
+# User Instructions
 
+- Do not work around the sandbox or use writable roots as a sandbox bypass.
+- If a task needs blocked access or a command fails because of sandbox restrictions, request escalation and retry with escalation.
 # Coding Quality
 
 ## Structure

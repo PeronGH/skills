@@ -1,0 +1,3 @@
+#!/bin/sh
+make -C global
+git add global/CLAUDE.md global/CODEX.md
