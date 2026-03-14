@@ -2,6 +2,7 @@
 
 - Do not work around the sandbox or use writable roots as a sandbox bypass.
 - If a task needs blocked access or a command fails because of sandbox restrictions, request escalation and retry with escalation.
+
 # Coding Quality
 
 ## Structure
@@ -46,3 +47,4 @@ Any lint or type-check suppression must include a justification — use the lint
 
 Do not add shortcuts that bypass type checks, lint, or tests without user approval.
 Do not add environment-specific workarounds without user approval. Keep the implementation direct and clean.
+DIRTY

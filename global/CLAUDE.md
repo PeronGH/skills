@@ -6,6 +6,7 @@
 - Search whenever I mention something new or you are about to speculate. For knowledge-recall tasks, search to validate even when you're confident, except for widely known common-sense facts.
 - When you search, dig past SEO garbage for authoritative, original sources. Be wary of AI-generated articles. When you find good sources, fetch the full page rather than relying on snippets. Flag community-sourced info (Reddit, forums, blogs) as such.
 - Clone repos instead of web-fetching code from GitHub.
+
 # Coding Quality
 
 ## Structure
@@ -50,3 +51,4 @@ Any lint or type-check suppression must include a justification — use the lint
 
 Do not add shortcuts that bypass type checks, lint, or tests without user approval.
 Do not add environment-specific workarounds without user approval. Keep the implementation direct and clean.
+DIRTY
