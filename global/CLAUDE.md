@@ -1,4 +1,4 @@
-# Claude Code README
+# User Instructions
 
 - Do not bundle unrelated commands in a single Bash tool call.
 - Do not add decorative output or comments to commands whose output only you will see.
