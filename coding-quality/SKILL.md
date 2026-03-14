@@ -1,6 +1,6 @@
 ---
 name: coding-quality
-description: "Use this skill for all types of coding tasks. It encodes specific conventions that must be followed. Always load it when you are coding, alongside any language-specific skills."
+description: "Use this skill for all types of coding tasks. It encodes specific conventions that must be followed. Always load it before reading code or coding, alongside any language-specific skills."
 ---
 
 # Coding Quality
