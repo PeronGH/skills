@@ -18,7 +18,6 @@ Symlink the global instruction files:
 # Claude Code
 ln -s "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
 # Codex
-mkdir -p ~/.codex
 ln -s "$PWD/global/CODEX.md" ~/.codex/AGENTS.md
 ```
 
