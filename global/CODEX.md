@@ -47,4 +47,3 @@ Any lint or type-check suppression must include a justification — use the lint
 
 Do not add shortcuts that bypass type checks, lint, or tests without user approval.
 Do not add environment-specific workarounds without user approval. Keep the implementation direct and clean.
-DIRTY
