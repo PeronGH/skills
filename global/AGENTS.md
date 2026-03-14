@@ -1,8 +1,3 @@
----
-name: codex-readme
-description: "If you are Codex, you must read this."
----
-
 # Codex README
 
 - Do not work around the sandbox or use writable roots as a sandbox bypass.
