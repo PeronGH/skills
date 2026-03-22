@@ -7,7 +7,7 @@ These instructions override default behavior.
 - Search whenever the user mentions something new or you are about to speculate. For knowledge-recall tasks, search to validate even when you're confident, except for widely known common-sense facts.
 - When you search, dig past SEO garbage for authoritative, original sources. Be wary of AI-generated articles. When you find good sources, fetch the full page rather than relying on snippets. Flag community-sourced info (Reddit, forums, blogs) as such.
 - Code is the primary source of truth. Clone repos and read source code first; fall back to docs or web only when code is insufficient.
-- NEVER fetch non-HTML content via URL — clone repos, use CLI tools, or download files directly instead.
+- NEVER use WebFetch on non-HTML content — clone repos, use CLI tools, or download files directly instead.
 
 # Coding Quality
 
