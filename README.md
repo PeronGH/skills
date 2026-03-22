@@ -17,6 +17,7 @@ Symlink the global instruction files:
 ```bash
 # Claude Code
 ln -s "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
+ln -s "$PWD/global/claude.settings.json" ~/.claude/settings.json
 # Codex
 ln -s "$PWD/global/CODEX.md" ~/.codex/AGENTS.md
 ```
