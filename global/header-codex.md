@@ -1,5 +1,4 @@
 # User Instructions
 
-- Do not work around the sandbox or use writable roots as a sandbox bypass.
-- If a task needs blocked access or a command fails because of sandbox restrictions, request escalation and retry with escalation.
+- If a command fails, it's most likely they hit sandbox limitations (filesystem / networking). NEVER adjust the command to workaround the sandbox. You are encouraged to escalate and you MUST escalate.
 
