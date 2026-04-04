@@ -1,10 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "permissions": {
-    "deny": ["Agent"]
+  "env": {
+    "CLAUDE_CODE_EFFORT_LEVEL": "max"
   },
-  "env": { "CLAUDE_CODE_EFFORT_LEVEL": "max" },
+  "permissions": {
+    "deny": [
+      "Agent"
+    ],
+    "defaultMode": "auto"
+  },
   "enabledPlugins": {
-    "rust-analyzer-lsp@claude-plugins-official": true
-  }
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
+  },
+  "skipAutoPermissionPrompt": true
 }
