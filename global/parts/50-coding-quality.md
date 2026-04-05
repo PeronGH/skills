@@ -19,7 +19,7 @@ If translating an idea from another language, rewrite it in the idioms of the ta
 
 ## Testing
 
-Add tests for new behavior and regressions. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
+Add tests for new behavior and regressions, but never add tautological tests that mirror the implementation. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
 
 ## Documentation
 

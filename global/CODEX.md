@@ -2,6 +2,7 @@
 
 - If a command fails, it's most likely they hit sandbox limitations (filesystem / networking). NEVER adjust the command to work around the sandbox. You are encouraged to escalate and you MUST escalate.
 - If anything is missing / not installed or prerequisites are not satisfied, you MUST pause and strongly request the user to install or set up whatever is missing.
+- It's always better to skip a test than to add a low-value one.
 
 # Coding Quality
 
@@ -24,7 +25,7 @@ If translating an idea from another language, rewrite it in the idioms of the ta
 
 ## Testing
 
-Add tests for new behavior and regressions. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
+Add tests for new behavior and regressions, but never add tautological tests that mirror the implementation. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
 
 ## Documentation
 
