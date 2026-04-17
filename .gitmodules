@@ -2,3 +2,4 @@
 	path = vendor/vercel-agent-skills
 	url = https://github.com/vercel-labs/agent-skills.git
 	branch = main
+	shallow = true
