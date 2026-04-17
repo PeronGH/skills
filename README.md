@@ -5,9 +5,9 @@ Use this repo as your user skills directory:
 ```bash
 git config core.hooksPath .githooks
 mkdir -p ~/.agents
-ln -s "$PWD" ~/.agents/skills
+ln -s "$PWD/skills" ~/.agents/skills
 # Claude Code
-ln -s "$PWD" ~/.claude/skills
+ln -s "$PWD/skills" ~/.claude/skills
 ```
 
 ## Global Instructions
@@ -26,7 +26,7 @@ Edit `global/parts/` — the pre-commit hook rebuilds automatically.
 
 ## Available Skills
 
-- [better-skill-creator](better-skill-creator/SKILL.md): write better skills than the default
-- [rust-coding](rust-coding/SKILL.md): write high-quality Rust code
-- [slides-creator](slides-creator/SKILL.md): create new slide decks and `.pptx` presentations
-- [waku-idiomatic](waku-idiomatic/SKILL.md): opinionated Waku patterns and structure
+- [better-skill-creator](skills/better-skill-creator/SKILL.md): write better skills than the default
+- [rust-coding](skills/rust-coding/SKILL.md): write high-quality Rust code
+- [slides-creator](skills/slides-creator/SKILL.md): create new slide decks and `.pptx` presentations
+- [waku-idiomatic](skills/waku-idiomatic/SKILL.md): opinionated Waku patterns and structure
