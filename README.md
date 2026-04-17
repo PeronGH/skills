@@ -30,3 +30,9 @@ Edit `global/parts/` — the pre-commit hook rebuilds automatically.
 - [rust-coding](skills/rust-coding/SKILL.md): write high-quality Rust code
 - [slides-creator](skills/slides-creator/SKILL.md): create new slide decks and `.pptx` presentations
 - [waku-idiomatic](skills/waku-idiomatic/SKILL.md): opinionated Waku patterns and structure
+
+### Vendored
+
+Symlinked from `vendor/vercel-agent-skills` ([vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)):
+
+- [react-best-practices](skills/react-best-practices/SKILL.md): React and Next.js performance patterns from Vercel Engineering
