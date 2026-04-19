@@ -15,6 +15,6 @@
     "rust-analyzer-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true
   },
-  "skipAutoPermissionPrompt": true,
-  "showThinkingSummaries": true
+  "showThinkingSummaries": true,
+  "skipAutoPermissionPrompt": true
 }
