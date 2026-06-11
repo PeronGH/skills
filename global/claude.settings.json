@@ -17,5 +17,6 @@
   "verbose": true,
   "autoCompactEnabled": false,
   "teammateMode": "auto",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "model": "claude-fable-5[1m]"
 }
