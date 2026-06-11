@@ -5,7 +5,8 @@
     "CLAUDE_CODE_NO_FLICKER": "1"
   },
   "permissions": {
-    "defaultMode": "auto"
+    "defaultMode": "auto",
+    "deny": ["Agent"]
   },
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true,
