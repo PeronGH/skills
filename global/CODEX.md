@@ -9,12 +9,12 @@
 ## Writing Code
 
 Keep public APIs minimal and elegant.
-Structure code around durable boundaries, not short-term convenience. Keep every file under reasonable size, break it down when it gets large.
+Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
 Avoid over-defensive code. Pin down external guarantees instead of speculating about them: check official documentation, validate inputs once at the boundary (e.g., `zod`), verify real shapes empirically (e.g., `curl` the API), then trust those guarantees downstream.
 Let errors surface: fail fast and propagate with context. No silent fallbacks or catch-and-continue without user approval.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
-When using a library, prefer latest, idiomatic APIs.
+When using a library, prefer the latest idiomatic APIs.
 
 ## Choosing Dependencies
 
@@ -33,12 +33,12 @@ Keep the README to purpose, usage, and a minimal example.
 Every project must have a formatter and linter configured. Set them up before writing any code if they are missing.
 Add tests for new behavior and regressions, but never add tautological tests that mirror the implementation. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
 When a test fails, fix the cause. Never weaken assertions, special-case the test's inputs in the implementation, or delete or skip failing tests without user approval.
-Any lint or type-check suppression must include a justification — use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`), otherwise a code comment. Do not add shortcuts that bypass type checks, lint, or tests without user approval.
+Any lint or type-check suppression must include a justification. Use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`); otherwise, use a code comment. Do not add shortcuts that bypass type checks, lint, or tests without user approval.
 Do not add environment-specific workarounds without user approval. Keep the implementation direct and clean.
 
 ## Committing
 
 Create a branch (`<type>/<description>`) for substantial or risky changes. Direct commits to `main`/`master` are acceptable for low-risk work or early-stage projects.
-Commit frequently and autonomously instead of batching large changes. But push shall be done by the user.
+Commit frequently and autonomously instead of batching large changes. The user is responsible for pushing.
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
 Before committing, the checks under Verifying must pass.
