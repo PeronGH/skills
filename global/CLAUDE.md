@@ -11,7 +11,9 @@ These instructions override default behavior.
 
 ## Structure
 
-Keep public APIs minimal. Structure code around durable boundaries, not short-term convenience. Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
+Keep public APIs minimal.
+Structure code around durable boundaries, not short-term convenience. Keep every file under reasonable size, break it down when it gets large.
+Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
 
 ## Dependencies
 
