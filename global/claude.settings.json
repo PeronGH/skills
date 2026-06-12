@@ -5,12 +5,16 @@
     "CLAUDE_CODE_NO_FLICKER": "1"
   },
   "permissions": {
-    "defaultMode": "auto",
-    "deny": ["Agent"]
+    "deny": [
+      "Agent"
+    ],
+    "defaultMode": "auto"
   },
+  "model": "claude-fable-5[1m]",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true,
-    "swift-lsp@claude-plugins-official": true
+    "swift-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true
   },
   "effortLevel": "high",
   "showThinkingSummaries": true,
@@ -18,6 +22,5 @@
   "verbose": true,
   "autoCompactEnabled": false,
   "teammateMode": "auto",
-  "skipAutoPermissionPrompt": true,
-  "model": "claude-fable-5[1m]"
+  "skipAutoPermissionPrompt": true
 }
