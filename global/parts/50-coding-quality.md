@@ -5,6 +5,7 @@
 Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file under reasonable size, break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
+Avoid over-defensive code. Pin down external guarantees instead of speculating about them: check official documentation, validate inputs once at the boundary (e.g., `zod`), verify real shapes empirically (e.g., `curl` the API), then trust those guarantees downstream.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 When using a library, prefer latest, idiomatic APIs.
 
