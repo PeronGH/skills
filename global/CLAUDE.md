@@ -15,7 +15,7 @@ Keep public APIs minimal. Structure code around durable boundaries, not short-te
 
 ## Dependencies
 
-Prefer mature dependencies over bespoke code when they simplify the design. Remove dependencies that constrain the design.
+Prefer mature dependencies over bespoke code when they simplify the design. Remove or replace dependencies that constrain the design.
 Use the package manager for dependency changes so package names and versions come from current registry data, not memory. Hand-edit manifests only for details the package manager cannot express.
 
 ## Refactoring
@@ -32,19 +32,20 @@ Add tests for new behavior and regressions, but never add tautological tests tha
 
 ## Documentation
 
-When behavior or a public API changes, update related comments and docs in the same change. Keep the README to purpose, usage, and a minimal example.
+When behavior or a public API changes, update related comments and docs in the same change.
+Keep comments concise. Only comment on non-obvious code. Update a comment only when it's wrong due to code change.
+Keep the README to purpose, usage, and a minimal example.
 
 ## Git
 
 Create a branch (`<type>/<description>`) for substantial or risky changes. Direct commits to `main`/`master` are acceptable for low-risk work or early-stage projects.
-Commit frequently and autonomously instead of batching large changes.
+Commit frequently and autonomously instead of batching large changes. But push shall be done by the user.
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
 Before committing, formatter, linter, and tests must pass.
 
 ## Tooling
 
 Every project must have a formatter and linter configured. Set them up before writing any code if they are missing.
-
 Any lint or type-check suppression must include a justification — use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`), otherwise a code comment.
 
 ## Workarounds
