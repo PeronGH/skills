@@ -24,6 +24,15 @@ ln -s "$PWD/global/CODEX.md" ~/.codex/AGENTS.md
 
 Edit `global/parts/` — the pre-commit hook rebuilds automatically.
 
+## Extra Tools
+
+The global instructions assume these CLI tools are available:
+
+```bash
+brew install ripgrep fd jq
+bun install -g @peron_js/web-cli@latest
+```
+
 ## Available Skills
 
 - [better-skill-creator](skills/better-skill-creator/SKILL.md): write better skills than the default
