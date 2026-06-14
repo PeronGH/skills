@@ -31,7 +31,7 @@ Edit `global/parts/` — the pre-commit hook rebuilds automatically.
 The global instructions assume these CLI tools are available:
 
 ```bash
-brew install ripgrep fd jq
+brew install ripgrep fd jq yq sd
 bun install -g @peron_js/web-cli@latest
 ```
 
