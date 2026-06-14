@@ -2,8 +2,9 @@
 
 Prefer these extra CLI tools:
 
+- `sg` (ast-grep) for structural code search and rewrite
 - `fd` over `find`
-- `jq`
-- `rg` over `grep`
+- `jq` for JSON
+- `rg` (ripgrep) over `grep`
 - `sd` over `sed`
-- `yq`
+- `yq` for YAML
