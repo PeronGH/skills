@@ -42,3 +42,12 @@ Create a branch (`<type>/<description>`) for substantial or risky changes. Direc
 Commit frequently and autonomously instead of batching large changes. The user is responsible for pushing.
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
 Before committing, the checks under Verifying must pass.
+
+# Extra Tools
+
+This environment provides the following extra CLI tools:
+
+- `rg`
+- `fd`
+- `jq`
+- `web` for searching and browsing the web. Get started with `web --help`.
