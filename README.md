@@ -5,9 +5,9 @@ Use this repo as your user skills directory:
 ```bash
 git config core.hooksPath .githooks
 mkdir -p ~/.agents
-ln -s "$PWD/skills" ~/.agents/skills
+ln -s "$(realpath skills)" ~/.agents/skills
 # Claude Code
-ln -s "$PWD/skills" ~/.claude/skills
+ln -s "$(realpath skills)" ~/.claude/skills
 ```
 
 ## Global Instructions
@@ -16,12 +16,12 @@ Symlink the global instruction files:
 
 ```bash
 # Claude Code
-ln -s "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
-ln -s "$PWD/global/claude.settings.json" ~/.claude/settings.json
+ln -s "$(realpath global/CLAUDE.md)" ~/.claude/CLAUDE.md
+ln -s "$(realpath global/claude.settings.json)" ~/.claude/settings.json
 # Codex
-ln -s "$PWD/global/CODEX.md" ~/.codex/AGENTS.md
+ln -s "$(realpath global/CODEX.md)" ~/.codex/AGENTS.md
 # Pi
-ln -s "$PWD/global/PI.md" ~/.pi/agent/APPEND_SYSTEM.md
+ln -s "$(realpath global/PI.md)" ~/.pi/agent/APPEND_SYSTEM.md
 ```
 
 Edit `global/parts/` — the pre-commit hook rebuilds automatically.
