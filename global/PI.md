@@ -1,3 +1,7 @@
+# User Instructions
+
+- Use the `web` CLI to search and browse the web; get started with `web --help`.
+
 # Coding Quality
 
 ## Writing Code
@@ -45,5 +49,4 @@ These extra CLI tools are likely available. Prefer them when present, and fall b
 - `jq`
 - `rg` (`ripgrep`)
 - `sd`
-- `web` for searching and browsing the web. Get started with `web --help`.
 - `yq`

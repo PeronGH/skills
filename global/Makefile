@@ -8,7 +8,7 @@ CLAUDE.md: header-claude.md $(PARTS)
 CODEX.md: header-codex.md $(PARTS)
 	awk 'FNR==1 && NR!=1 {print ""} 1' $^ > $@
 
-PI.md: $(PARTS)
+PI.md: header-pi.md $(PARTS)
 	awk 'FNR==1 && NR!=1 {print ""} 1' $^ > $@
 
 clean:
