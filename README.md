@@ -20,6 +20,8 @@ ln -s "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
 ln -s "$PWD/global/claude.settings.json" ~/.claude/settings.json
 # Codex
 ln -s "$PWD/global/CODEX.md" ~/.codex/AGENTS.md
+# Pi
+ln -s "$PWD/global/PI.md" ~/.pi/agent/AGENTS.md
 ```
 
 Edit `global/parts/` — the pre-commit hook rebuilds automatically.
