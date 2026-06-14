@@ -45,7 +45,7 @@ Before committing, the checks under Verifying must pass.
 
 # Extra Tools
 
-These extra CLI tools are likely available. Prefer them when present, and fall back gracefully when they are not:
+Prefer these extra CLI tools:
 
 - `fd` over `find`
 - `jq`
