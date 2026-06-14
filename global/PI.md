@@ -39,11 +39,11 @@ Before committing, the checks under Verifying must pass.
 
 # Extra Tools
 
-This environment provides the following extra CLI tools:
+These extra CLI tools are likely available. Prefer them when present, and fall back gracefully when they are not:
 
 - `fd`
 - `jq`
-- `rg`
+- `rg` (`ripgrep`)
 - `sd`
 - `web` for searching and browsing the web. Get started with `web --help`.
 - `yq`
