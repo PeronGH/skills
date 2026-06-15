@@ -26,7 +26,7 @@ ln -s "$(realpath global/PI.md)" ~/.pi/agent/APPEND_SYSTEM.md
 
 Edit `global/parts/` — the pre-commit hook rebuilds automatically.
 
-## Extra Tools
+## Preferred Tools
 
 The global instructions assume these CLI tools are available:
 

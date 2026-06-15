@@ -46,9 +46,9 @@ Commit frequently and autonomously instead of batching large changes. The user i
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
 Before committing, the checks under Verifying must pass.
 
-## Extra Tools
+## Preferred Tools
 
-Prefer these extra CLI tools:
+Prefer these CLI tools:
 
 - `sg` (ast-grep) for structural code search and rewrite
 - `fd` over `find`
