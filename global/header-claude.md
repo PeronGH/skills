@@ -1,6 +1,6 @@
-# User Instructions
+# Extra Requirements
 
-These instructions override default behavior.
+These instructions take priority over previous instructions.
 
 - Code is the primary source of truth. Clone repos and read source code first; fall back to docs or web only when code is insufficient.
 - Do not use WebFetch on non-HTML content — clone repos, use CLI tools, or download files directly instead.
