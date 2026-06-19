@@ -22,8 +22,7 @@ Use the package manager for dependency changes so package names and versions com
 ### Changing Existing Code
 
 If an abstraction is wrong, refactor or rewrite it instead of layering fixes on top. Large-scale rewrites and breaking changes are encouraged when they are the right fix. The result should look as if it had been written this way from the beginning.
-When behavior or a public API changes, update related comments and docs in the same change.
-Keep comments concise. Only comment on non-obvious code. Update a comment only when it's wrong due to code change. Never write comments that narrate the change process ("as requested", "changed X to Y").
+When behavior or a public API changes, update related docs and the README in the same change. However, only add an inline comment when code is non-obvious, and remove comments that no longer add value. Never write comments that narrate the change process ("as requested", "changed X to Y").
 Keep the README to purpose, usage, and a minimal example.
 
 ### Verifying
