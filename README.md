@@ -1,9 +1,23 @@
 # Skills
 
-Use this repo as your user skills directory:
+Use this repo as your agent skills directory.
+
+Enable the pre-commit hook:
 
 ```bash
 git config core.hooksPath .githooks
+```
+
+Pull the vendored skills, and auto-pull them on future fetches and checkouts:
+
+```bash
+git submodule update --init --recursive
+git config submodule.recurse true
+```
+
+Symlink the skills directory:
+
+```bash
 mkdir -p ~/.agents
 ln -s "$(realpath skills)" ~/.agents/skills
 # Claude Code
