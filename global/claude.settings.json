@@ -10,17 +10,18 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "sonnet",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "clangd-lsp@claude-plugins-official": true
   },
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "showThinkingSummaries": true,
+  "skipWorkflowUsageWarning": true,
   "theme": "auto",
   "verbose": true,
   "autoCompactEnabled": false,
   "teammateMode": "auto",
-  "skipAutoPermissionPrompt": true,
-  "skipWorkflowUsageWarning": true
+  "skipAutoPermissionPrompt": true
 }
