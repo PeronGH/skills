@@ -44,7 +44,5 @@ Before committing, the checks under Verifying must pass.
 
 Prefer these CLI tools:
 
-- `fd` over `find`
 - `jq` for JSON
-- `sd` over `sed`
 - `yq` for YAML
