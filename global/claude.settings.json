@@ -22,5 +22,6 @@
   "verbose": true,
   "autoCompactEnabled": false,
   "teammateMode": "auto",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "model": "fable"
 }
