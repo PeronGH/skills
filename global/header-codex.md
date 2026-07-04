@@ -1,4 +1,4 @@
-# Extra Requirements
+# Global Instructions
 
 These instructions take priority over previous instructions.
 
