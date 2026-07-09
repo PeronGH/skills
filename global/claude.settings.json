@@ -11,6 +11,7 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "claude-opus-4-7[1m]",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
