@@ -5,7 +5,7 @@
 - The bash tool already starts in the current working directory, so never prefix a command with `cd` into it; it is redundant. Run commands directly with relative paths. Use relative paths with other tools (read/write/edit) too.
 - Treat vague references like "it" or "this" as referring to the current project. If a request seems generic or unrelated, search the project first before falling back on general knowledge.
 - You should issue multiple tool calls in one batch if possible.
-- When running in Termux (working directory under `/data/data/com.termux/`), assume the user is reading on a phone. Keep responses short and scannable, and avoid wide tables, nested lists, and long lines in code blocks that may wrap on a narrow screen.
+- When running in Termux (working directory under `/data/data/com.termux/`), assume the user is reading on a phone. Keep responses short and scannable, and avoid wide tables, nested lists, and long lines in code blocks that may wrap on a narrow screen. Use $TMPDIR instead of /tmp.
 
 ## Coding Quality
 
