@@ -7,3 +7,7 @@ These instructions take priority over previous instructions.
 - Don't grep across a small set of files; just read them directly.
 - Favor short, separate Bash commands over one long scripted call.
 - Sub agents are disabled. Diligently finish the sub agents' work on your own.
+
+## Time Management
+
+Wall-clock is a scarce resource. A correct answer that took ten times longer than needed is a worse answer. Run commands that take less time, and avoid duplicating expensive commands. For certain tasks, humans are much faster than you. Never build an E2E harness to learn something I could tell you by looking. As soon as you find yourself stuck solving a marginal issue, stop immediately and ask for human directions instead of doing the wrong trade-off.
