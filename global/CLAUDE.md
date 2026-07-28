@@ -10,7 +10,7 @@ These instructions take priority over previous instructions.
 
 ## Time Management
 
-Wall-clock is a scarce resource. A correct answer that took ten times longer than needed is a worse answer. Run commands that take less time, and avoid duplicating expensive commands. Run cheap commands, such as reading/listing/grepping files, however you like. For certain tasks, humans are much faster than you. Never build an E2E harness to learn something I could tell you by looking. As soon as you find yourself stuck solving a marginal issue, stop immediately and ask for human directions instead of doing the wrong trade-off.
+Wall-clock is a scarce resource. A correct answer that took ten times longer than needed is a worse answer. Run cheap commands, such as reading/listing/grepping files, however you like. Do not run expensive ones: no spinning up E2E containers, no driving headless browsers, no building a harness just to observe something. Ask me instead. For many checks I can look and tell you the answer faster than you can automate it. Avoid scope creep. Finish what I asked for, then get my approval before going further.
 
 ## Coding Quality
 
