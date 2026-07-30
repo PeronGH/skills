@@ -48,6 +48,13 @@ The global instructions assume these CLI tools are available:
 brew install jq yq
 ```
 
+## Recommended Pi Extensions
+
+```bash
+pi install npm:pi-thinking-status
+pi install npm:@peron_js/web-pi
+```
+
 ## Available Skills
 
 - [better-skill-creator](skills/better-skill-creator/SKILL.md): write better skills than the default
