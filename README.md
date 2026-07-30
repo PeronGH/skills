@@ -46,7 +46,6 @@ The global instructions assume these CLI tools are available:
 
 ```bash
 brew install jq yq
-bun install -g @peron_js/web-cli@latest
 ```
 
 ## Available Skills
