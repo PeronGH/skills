@@ -20,7 +20,7 @@ When something worth changing surfaces, describe it and wait. Neither the user's
 Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
-Avoid over-defensive code. Pin down external guarantees instead of speculating about them: check official documentation, validate inputs once at the boundary (e.g., `zod`), verify real shapes empirically (e.g., `curl` the API), then trust those guarantees downstream.
+Avoid over-defensive code. Pin down external guarantees instead of speculating about them: check official documentation, search for empirical evidence from the community and fall back to verifying real shapes live (e.g., `curl` the API). Parse or validate inputs once at the boundary (e.g., `zod`), then trust those guarantees downstream.
 Let errors surface: fail fast and propagate with context. No silent fallbacks or catch-and-continue without user approval.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 When using a library, prefer the latest idiomatic APIs.
