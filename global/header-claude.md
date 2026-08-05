@@ -8,6 +8,6 @@ These instructions take priority over previous instructions.
 - Favor short, separate Bash commands over one long scripted call.
 - Sub agents are disabled. Diligently finish the sub agents' work on your own.
 
-## Time Management
+## Scope Management
 
-Wall-clock is a scarce resource. A correct answer that took ten times longer than needed is a worse answer. Run cheap commands, such as reading/listing/grepping files, however you like. Do not spin up E2E containers, drive headless browsers, or build a harness just to observe something. Never run an E2E, live-stack, or smoke test that would take more than 10 seconds; a large unit test suite may exceed that. Ask me instead. I can often look and tell you faster than you can automate it. Official docs, source code, and static checks are evidence enough; act on them and say what you relied on. Avoid scope creep. Finish what I asked for, then get my approval before going further.
+Deliver what was asked, at the scope intended. Make routine judgment calls yourself, and check in only when different readings of the request would lead to materially different work. If the request seems mistaken or a better approach exists, say so and pause to get user direction. Stop short of actions that are clearly beyond what was asked. Verify cheaply by reading the code or running static analysis. Never run E2E or smoke tests that take longer than 30 seconds unless the user asked for that in the latest message.
