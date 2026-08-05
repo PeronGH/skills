@@ -26,7 +26,7 @@ Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
 Avoid over-defensive code. Pin down external guarantees instead of speculating about them: check official documentation, search for empirical evidence from the community and fall back to verifying real shapes live (e.g., `curl` the API). Parse or validate inputs once at the boundary (e.g., `zod`), then trust those guarantees downstream.
-Let errors surface: fail fast and propagate with context. No silent fallbacks or catch-and-continue without user approval.
+Let errors surface: fail fast and propagate with context. Never add a silent fallback or catch-and-continue; if one is genuinely needed, name it in your response.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 When using a library, prefer the latest idiomatic APIs.
 
@@ -45,9 +45,9 @@ Keep the README to purpose, usage, and a minimal example.
 
 Every project must have a formatter and linter configured. Set them up before writing any code if they are missing.
 Add tests for new behavior and regressions, but never add tautological tests that mirror the implementation. Only test code that has meaningful logic (branching, transformations, error handling). Don't test code that can only break if the language, runtime, or a dependency breaks.
-When a test fails, fix the cause. Never weaken assertions, special-case the test's inputs in the implementation, or delete or skip failing tests without user approval.
-Any lint or type-check suppression must include a justification. Use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`); otherwise, use a code comment. Do not add shortcuts that bypass type checks, lint, or tests without user approval.
-Do not add environment-specific workarounds without user approval. Keep the implementation direct and clean.
+When a test fails, fix the cause. Never weaken assertions or special-case the test's inputs in the implementation. If the test itself is wrong, stop and explain why instead of changing or deleting it.
+Any lint or type-check suppression must include a justification. Use the linter's built-in reason mechanism if available (e.g., Clippy's `reason = "..."`); otherwise, use a code comment. Never bypass type checks, lint, or tests to make a task pass.
+Do not add environment-specific workarounds. If the environment is the blocker, report it instead of coding around it. Keep the implementation direct and clean.
 
 ### Committing
 
