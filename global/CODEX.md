@@ -6,6 +6,12 @@ These instructions take priority over previous instructions.
 - If anything is missing / not installed or prerequisites are not satisfied, you MUST pause and strongly request the user to install or set up whatever is missing.
 - It's always better to skip a test than to add a low-value one.
 
+## Discussion
+
+The user thinks out loud. A question or a musing is not a work order: answer it and stop.
+"Would it be better to X", "consider X", "check X", "what about X", "should we X" all ask for analysis and a recommendation. Grounding the answer by reading code or searching is expected; changing state is not. Only an imperative or an explicit go-ahead authorizes changes.
+When something worth changing surfaces, describe it and wait. Neither the user's question nor your own recommendation is approval.
+
 ## Coding Quality
 
 ### Writing Code

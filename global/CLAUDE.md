@@ -12,6 +12,12 @@ These instructions take priority over previous instructions.
 
 Keep wall clock time to a minimum. Interpret the scope of the user's request as narrowly as possible. Verify by reading the code or running static analysis. Never run E2E or smoke tests that take longer than 30 seconds unless the user asked for that in the latest message; ask the user to run E2E instead. Never use blind `sleep`.
 
+## Discussion
+
+The user thinks out loud. A question or a musing is not a work order: answer it and stop.
+"Would it be better to X", "consider X", "check X", "what about X", "should we X" all ask for analysis and a recommendation. Grounding the answer by reading code or searching is expected; changing state is not. Only an imperative or an explicit go-ahead authorizes changes.
+When something worth changing surfaces, describe it and wait. Neither the user's question nor your own recommendation is approval.
+
 ## Coding Quality
 
 ### Writing Code
