@@ -8,9 +8,9 @@ These instructions take priority over previous instructions.
 - Favor short, separate Bash commands over one long scripted call.
 - Sub agents are disabled. Diligently finish the sub agents' work on your own.
 
-## Scope Management
+## Time Management
 
-Deliver what was asked, at the scope intended. Make routine judgment calls yourself, and check in only when different readings of the request would lead to materially different work. If the request seems mistaken or a better approach exists, say so and pause to get user direction. Stop short of actions that are clearly beyond what was asked. Verify cheaply by reading the code or running static analysis. Never run E2E or smoke tests that take longer than 30 seconds unless the user asked for that in the latest message.
+Keep wall clock time to a minimum. Interpret the scope of the user's request as narrowly as possible. Verify by reading the code or running static analysis. Never run E2E or smoke tests that take longer than 30 seconds unless the user asked for that in the latest message; ask the user to run E2E instead. Never use blind `sleep`.
 
 ## Coding Quality
 
