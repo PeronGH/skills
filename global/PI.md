@@ -53,6 +53,10 @@ Commit frequently and autonomously instead of batching large changes. The user i
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
 Before committing, the checks under Verifying must pass.
 
+## Markdown
+
+Never hard-wrap prose, unless the file already is or a formatter enforces a column limit.
+
 ## Preferred Tools
 
 Prefer these CLI tools:
