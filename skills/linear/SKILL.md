@@ -1,6 +1,6 @@
 ---
 name: linear
-description: "Use when the user asks to work with Linear or the context has a Linear issue ID; never trigger merely because work could be tracked."
+description: "Use whenever Linear is involved: the user mentions Linear, asks to create, track, or update an issue, or shares a Linear URL or issue ID (e.g. `ENG-123` or a `linear.app` link)."
 ---
 
 # Linear
