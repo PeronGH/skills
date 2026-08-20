@@ -60,8 +60,6 @@ pi install npm:pi-effort-command
 
 - [better-skill-creator](skills/better-skill-creator/SKILL.md): write better skills than the default
 - [rust-coding](skills/rust-coding/SKILL.md): write high-quality Rust code
-- [slides-creator](skills/slides-creator/SKILL.md): create new slide decks and `.pptx` presentations
-- [waku-idiomatic](skills/waku-idiomatic/SKILL.md): opinionated Waku patterns and structure
 
 ### Vendored
 
