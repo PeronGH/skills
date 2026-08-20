@@ -59,6 +59,7 @@ pi install npm:pi-effort-command
 ## Available Skills
 
 - [better-skill-creator](skills/better-skill-creator/SKILL.md): write better skills than the default
+- [linear](skills/linear/SKILL.md): manage Linear issues from intake through completion
 - [rust-coding](skills/rust-coding/SKILL.md): write high-quality Rust code
 
 ### Vendored
