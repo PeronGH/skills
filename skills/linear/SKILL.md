@@ -7,6 +7,8 @@ description: "Use whenever Linear is involved: the user mentions Linear, asks to
 
 First check whether Linear MCP tools are available. If not, ask the user how to access Linear and stop.
 
+Read each issue as a problem statement, not a work order. Validate its premise independently, and search for a better solution instead of blindly implementing any fix the issue suggests.
+
 Keep the issue synchronized with the actual work; update status and progress promptly.
 
 Keep descriptions concise and focused on the problem and desired outcome, never the implementation plan. The description shall be durable: no file:line references, no implementation details tied to the current code base.
