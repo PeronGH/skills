@@ -11,6 +11,8 @@ Read each issue as a problem statement, not a work order. Validate its premise i
 
 Keep the issue synchronized with the actual work; update status and progress promptly.
 
+Before filing an issue, search Linear to check whether one already exists for the same problem.
+
 Keep descriptions concise and focused on the problem and desired outcome, never the implementation plan. The description shall be durable: no file:line references, no implementation details tied to the current code base.
 
 Edit the description only while the issue is in Backlog or Todo. Once it reaches In Progress, never edit the description again; add all subsequent changes as comments.
