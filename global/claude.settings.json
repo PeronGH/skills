@@ -11,7 +11,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "claude-opus-5[1m]",
+  "model": "opus",
   "enabledPlugins": {
     "rust-analyzer-lsp@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
@@ -24,5 +24,6 @@
   "verbose": true,
   "autoCompactEnabled": false,
   "teammateMode": "auto",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "outputStyle": "Concise"
 }
