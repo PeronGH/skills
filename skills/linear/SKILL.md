@@ -9,9 +9,9 @@ First check whether Linear MCP tools are available. If not, ask the user how to 
 
 Read each issue as a problem statement, not a work order. Validate its premise independently, and search for a better solution instead of blindly implementing any fix the issue suggests.
 
-Keep the issue synchronized with the actual work; update status and progress promptly.
+Keep the issue synchronized with the actual work; update status and progress promptly. You should move the issue to In Progress once you start to plan for implementation.
 
-Before filing an issue, search Linear to check whether one already exists for the same problem.
+Before filing an issue, search Linear to check whether one already exists for the same problem. Before posting any text — such as an issue description or comment — let the user preview the contents first, and get the user's explicit approval before posting. A change request is not approval.
 
 Keep descriptions concise and focused on the problem and desired outcome, never the implementation plan. The description shall be durable: no file:line references, no implementation details tied to the current code base.
 
