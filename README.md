@@ -53,7 +53,6 @@ brew install jq yq
 ```bash
 pi install npm:pi-thinking-status
 pi install npm:@peron_js/web-pi
-pi install npm:pi-effort-command
 ```
 
 ## Available Skills
