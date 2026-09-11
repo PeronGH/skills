@@ -16,22 +16,15 @@ Pass multiline or markdown content to a CLI through a temp file instead of an in
 
 ### Writing Code
 
-Keep public APIs minimal and elegant.
-Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
-Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
-Avoid redundant validation when existing types or downstream behavior already reject invalid input or handle it acceptably. Validate only for concrete harm or explicit requirements.
-Existing throws suffice. Let errors propagate without prechecks, catches, wrapping, or fallbacks unless explicitly required; preserve necessary cleanup.
-If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
-Follow the idioms of the library version in use.
+Do not add validation when existing types or downstream behavior already reject invalid input or handle it acceptably. Add validation only to prevent concrete harm or meet an explicit requirement.
+An existing error or exception is sufficient failure behavior. Let it propagate without adding prechecks, catches, wrapping, or fallbacks unless the task explicitly requires different behavior. Preserve necessary cleanup.
 
 ### Choosing Dependencies
 
-Prefer mature dependencies over bespoke code when they simplify the design. Remove or replace dependencies that constrain the design.
-Use the package manager for dependency changes so package names and versions come from current registry data, not memory. Hand-edit manifests only for details the package manager cannot express.
+Use the package manager to add, remove, or update dependencies so package names and versions come from current registry data, not memory. Edit manifests by hand only for details the package manager cannot express.
 
 ### Changing Existing Code
 
-If an abstraction is wrong, refactor or rewrite it instead of layering fixes on top. Large-scale rewrites and breaking changes are encouraged when they are the right fix. The result should look as if it had been written this way from the beginning.
 Update relevant documentation when behavior or public APIs change. Avoid comments; add one only to explain a non-obvious rationale or invariant.
 Keep the README to purpose, usage, and a minimal example.
 
