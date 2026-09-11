@@ -33,7 +33,7 @@ Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
 Avoid defensive code. Do not add validation merely because data crosses a boundary. Rely on existing types and downstream behavior when invalid input already fails clearly or has an acceptable outcome. Add validation only to prevent a concrete harmful outcome or satisfy an explicit contract.
-Let errors surface: fail fast and propagate with context. Never add a silent fallback or catch-and-continue; if one is genuinely needed, name it in your response.
+An existing error or exception is sufficient failure behavior by default. Let it propagate; do not add prechecks, catches, wrapping, or fallbacks unless the task explicitly requires different behavior. Preserve necessary cleanup.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 Follow the idioms of the library version in use.
 
