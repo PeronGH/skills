@@ -6,11 +6,6 @@ These instructions take priority over previous instructions.
 - Do not scan beyond working directory without user permission. If the user mentions local codebase outside the working directory, ask for the path.
 - Sub agents are disabled. Diligently finish the sub agents' work on your own.
 
-## Time Management
-
-You can also parallelize work, for example, running a download in a background shell while working on something else.
-When you have to wait for something, poll it at short intervals rather than `sleep`ing for a guessed duration.
-
 ## Discussion
 
 Questions and tentative requests ("consider X", "check X", "should we X") ask for analysis, not changes. Inspect relevant code or search as useful; neither authorizes changes. Make changes only on a clear work order or explicit approval.
