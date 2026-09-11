@@ -32,7 +32,7 @@ Pass multiline or markdown content to a CLI through a temp file instead of an in
 Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
-Avoid defensive code. Verify uncertain external guarantees through documentation, search, or live data, then validate inputs once at the boundary and trust them downstream.
+Avoid defensive code. Do not add validation merely because data crosses a boundary. Rely on existing types and downstream behavior when invalid input already fails clearly or has an acceptable outcome. Add validation only to prevent a concrete harmful outcome or satisfy an explicit contract.
 Let errors surface: fail fast and propagate with context. Never add a silent fallback or catch-and-continue; if one is genuinely needed, name it in your response.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 Follow the idioms of the library version in use.
@@ -51,7 +51,7 @@ Keep the README to purpose, usage, and a minimal example.
 ### Verifying
 
 Use existing formatting and linting tools; add tooling only when the task warrants it.
-Test meaningful behavior and regressions proportionally to risk; avoid tests that mirror the implementation or cover language, runtime, or dependency guarantees.
+Prefer the cheapest verification that establishes the requested behavior. A quick manual check is often sufficient; use existing automated checks when convenient. Do not add tests by default. Add them when they protect consequential behavior or a plausible regression that existing coverage misses. Keep test code and setup proportionate to the logic and risk; avoid building test infrastructure for a small change. Stop once the relevant behavior is established.
 Fix causes of test failures; never weaken valid assertions to pass.
 Justify lint or type-check suppressions; never bypass checks to make a task pass.
 If the environment blocks verification, report it rather than adding a workaround.
