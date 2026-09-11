@@ -21,8 +21,8 @@ Pass multiline or markdown content to a CLI through a temp file instead of an in
 Keep public APIs minimal and elegant.
 Structure code around durable boundaries, not short-term convenience. Keep every file reasonably sized, and break it down when it gets large.
 Prefer less code when clarity is preserved. Avoid duplicate logic by relying on types, validated interfaces, and existing guarantees.
-Avoid defensive code. Do not add validation merely because data crosses a boundary. Rely on existing types and downstream behavior when invalid input already fails clearly or has an acceptable outcome. Add validation only to prevent a concrete harmful outcome or satisfy an explicit contract.
-An existing error or exception is sufficient failure behavior by default. Let it propagate; do not add prechecks, catches, wrapping, or fallbacks unless the task explicitly requires different behavior. Preserve necessary cleanup.
+Avoid redundant validation when existing types or downstream behavior already reject invalid input or handle it acceptably. Validate only for concrete harm or explicit requirements.
+Existing throws suffice. Let errors propagate without prechecks, catches, wrapping, or fallbacks unless explicitly required; preserve necessary cleanup.
 If translating an idea from another language, rewrite it in the idioms of the target language instead of transliterating the source pattern.
 Follow the idioms of the library version in use.
 
@@ -40,7 +40,7 @@ Keep the README to purpose, usage, and a minimal example.
 ### Verifying
 
 Use existing formatting and linting tools; add tooling only when the task warrants it.
-Prefer the cheapest verification that establishes the requested behavior. A quick manual check is often sufficient; use existing automated checks when convenient. Do not add tests by default. Add them when they protect consequential behavior or a plausible regression that existing coverage misses. Keep test code and setup proportionate to the logic and risk; avoid building test infrastructure for a small change. Stop once the relevant behavior is established.
+Use the cheapest sufficient check; quick manual verification often suffices. Stop once behavior is established. Don't add tests by default; reserve proportional tests for consequential behavior or uncovered regression risks.
 Fix causes of test failures; never weaken valid assertions to pass.
 Justify lint or type-check suppressions; never bypass checks to make a task pass.
 If the environment blocks verification, report it rather than adding a workaround.
