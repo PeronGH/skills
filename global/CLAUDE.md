@@ -38,15 +38,12 @@ Use the package manager to add, remove, or update dependencies so package names 
 
 ### Changing Existing Code
 
-Update relevant documentation when behavior or public APIs change. Avoid comments; add one only to explain a non-obvious rationale or invariant.
+Avoid comments unless they explain a non-obvious rationale or invariant.
 Keep the README to purpose, usage, and a minimal example.
 
 ### Verifying
 
-Use existing formatting and linting tools; add tooling only when the task warrants it.
-Use the cheapest sufficient check; quick manual verification often suffices. Stop once behavior is established. Don't add tests by default; reserve proportional tests for consequential behavior or uncovered regression risks.
-Fix causes of test failures; never weaken valid assertions to pass.
-Justify lint or type-check suppressions; never bypass checks to make a task pass.
+Use the cheapest check that establishes the requested behavior; a quick manual check is often sufficient. Stop once that behavior is established. Do not add tests by default. Add focused tests only for consequential behavior or regression risks not covered by existing tests, keeping the effort proportional to the risk.
 If the environment blocks verification, report it rather than adding a workaround.
 
 ### Committing
