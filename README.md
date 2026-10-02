@@ -31,7 +31,6 @@ Symlink the global instruction files:
 ```bash
 # Claude Code
 ln -s "$(realpath global/CLAUDE.md)" ~/.claude/CLAUDE.md
-ln -s "$(realpath global/claude.settings.json)" ~/.claude/settings.json
 # Codex
 ln -s "$(realpath global/CODEX.md)" ~/.codex/AGENTS.md
 # Pi
