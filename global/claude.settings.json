@@ -3,7 +3,6 @@
   "apiKeyHelper": "gh auth token",
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.githubcopilot.com",
-    "CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING": "1",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
     "CLAUDE_CODE_NO_FLICKER": "1"
   },
