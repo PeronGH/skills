@@ -8,7 +8,8 @@
   },
   "permissions": {
     "deny": [
-      "Agent"
+      "WebSearch",
+      "WebFetch"
     ],
     "defaultMode": "auto"
   },
