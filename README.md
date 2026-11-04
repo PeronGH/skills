@@ -22,6 +22,9 @@ mkdir -p ~/.agents
 ln -s "$(realpath skills)" ~/.agents/skills
 # Claude Code
 ln -s "$(realpath skills)" ~/.claude/skills
+# Antigravity
+mkdir -p ~/.gemini/config
+ln -s "$(realpath skills)" ~/.gemini/config/skills
 ```
 
 ## Global Instructions
@@ -33,6 +36,8 @@ Symlink the global instruction files:
 ln -s "$(realpath global/CLAUDE.md)" ~/.claude/CLAUDE.md
 # Codex
 ln -s "$(realpath global/CODEX.md)" ~/.codex/AGENTS.md
+# Antigravity
+ln -s "$(realpath global/GEMINI.md)" ~/.gemini/GEMINI.md
 # Pi
 ln -s "$(realpath global/PI.md)" ~/.pi/agent/APPEND_SYSTEM.md
 ```
