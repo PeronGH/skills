@@ -21,6 +21,6 @@ If the environment blocks verification, report it rather than adding a workaroun
 
 ### Committing
 
-Create a branch (`<type>/<description>`) for substantial or risky changes. Direct commits to `main`/`master` are acceptable for low-risk work or early-stage projects.
+Create a branch (`<type>/<description>`) for substantial or risky changes. Direct commits to `main`/`master` are acceptable for low-risk work or personal projects with no convention of creating branches.
 Commit coherent changes autonomously. The user is responsible for pushing.
 Follow the project's existing commit message convention. If none, use `<type>(<scope>): <description>`.
